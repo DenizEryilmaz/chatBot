@@ -1,0 +1,29 @@
+{
+  "best_selling_products": [
+    {
+      "ürün": "Telefon",
+      "satış_adedi": 120,
+      "gelir": 12000
+    },
+    {
+      "ürün": "Bilgisayar",
+      "satış_adedi": 100,
+      "gelir": 15000
+    },
+    {
+      "ürün": "Televizyon",
+      "satış_adedi": 80,
+      "gelir": 8000
+    },
+    {
+      "ürün": "Tablet",
+      "satış_adedi": 70,
+      "gelir": 7000
+    },
+    {
+      "ürün": "Kulaklık",
+      "satış_adedi": 60,
+      "gelir": 3000
+    }
+  ]
+}

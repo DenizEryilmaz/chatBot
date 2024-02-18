@@ -1,0 +1,25 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Deniz",
+            "order_status": "Cancelled",
+            "tracking_number": "ABC123456",
+            "delivery_date": "2024-02-15"
+        },
+        {
+            "id": 2,
+            "name": "Ali",
+            "order_status": "Dağıtıma çıktı",
+            "tracking_number": "DEF789012",
+            "delivery_date": "2024-02-17"
+        },
+        {
+            "id": 3,
+            "name": "Veli",
+            "order_status": "Teslim Edildi",
+            "tracking_number": "GHI345678",
+            "delivery_date": "2024-02-10"
+        }
+    ]
+}

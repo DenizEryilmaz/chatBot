@@ -1,0 +1,612 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Merhaba",
+        "Selam",
+        "Nasılsınız?",
+        "Günaydın",
+        "İyi günler",
+        "Merhabalar",
+        "Selamlar",
+        "Nasılsınız?",
+        "Merhaba nasılsınız?",
+        "Selamunaleyküm"
+      ],
+      "responses": [
+        "Merhaba! Size nasıl yardımcı olabilirim?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Güle güle",
+        "Hoşça kal",
+        "Bay bay",
+        "İyi günler",
+        "Görüşmek üzere",
+        "Hoşça kalın",
+        "Görüşürüz",
+        "İyi günler dilerim",
+        "Hoşça kalın nasıl yardımcı olabilirim?",
+        "Bay bay görüşmek üzere"
+      ],
+      "responses": [
+        "Görüşmek üzere! Başka bir şey yapmam gerekiyorsa lütfen haber verin."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Teşekkür ederim",
+        "Sağ ol",
+        "Teşekkürler",
+        "Çok teşekkür ederim",
+        "Çok sağ ol",
+        "Çok teşekkürler",
+        "Size minnettarım",
+        "Elinize sağlık",
+        "Çok yardımcı oldunuz",
+        "Teşekkür ederim nasıl yardımcı olabilirim?"
+      ],
+      "responses": [
+        "Rica ederim! Başka bir sorunuz varsa çekinmeden sorabilirsiniz."
+      ]
+    },
+    {
+      "tag": "order_tracking",
+      "patterns": [
+        "Siparişimi takip etmek istiyorum",
+        "Sipariş durumu nedir?",
+        "Siparişim ne zaman gelecek?",
+        "Siparişimi kontrol etmek istiyorum",
+        "Kargom nerede",
+        "Siparişim nerede",
+        "Sipariş durumumu öğrenmek istiyorum",
+        "Siparişimin durumunu kontrol etmek istiyorum",
+        "Sipariş takibi yapmak istiyorum",
+        "Sipariş durumunu sorgulamak istiyorum"
+      ],
+      "responses": [
+        "Sipariş numaranızı veya adınızı yazabilir misiniz?"
+      ],
+      "function": "get_order_status"
+    },
+    {
+      "tag": "provide_order_number",
+      "patterns": [],
+      "responses": [
+        "Siparişiniz şu anda hazırlanıyor."
+      ]
+    },
+    {
+      "tag": "contact_support",
+      "patterns": [
+        "Müşteri hizmetlerine nasıl ulaşabilirim?",
+        "Destek ekibine ihtiyacım var",
+        "Yardım almak istiyorum",
+        "Sorunum var çözüm bekliyorum",
+        "Yardıma ihtiyacım var",
+        "Müşteri hizmetleriyle iletişime geçmek istiyorum",
+        "Acil yardım gerekiyor",
+        "Destek ekibiyle görüşmek istiyorum",
+        "Destek ekibine ulaşmak istiyorum",
+        "Müşteri hizmetleriyle bağlantı kurmak istiyorum"
+      ],
+      "responses": [
+        "Müşteri hizmetlerine ulaşmak için lütfen şu numarayı arayın: 123456789"
+      ]
+    },
+    {
+      "tag": "cancel_order",
+      "patterns": [
+        "Siparişi iptal etmek istiyorum",
+        "Siparişi değiştirmek istiyorum",
+        "Siparişi iptal etmek gerekiyor",
+        "Siparişimde değişiklik yapmak istiyorum",
+        "Siparişimi iptal etmek istiyorum",
+        "Siparişimdeki bir ürünü iptal etmek istiyorum",
+        "Siparişimdeki bir ürünü değiştirmek istiyorum",
+        "Siparişimde değişiklik yapılması gerekiyor",
+        "Siparişimi iptal etmek istiyorum nasıl yapabilirim",
+        "Siparişimdeki bir ürünü değiştirmek gerekiyor"
+      ],
+      "responses": [
+        "Siparişinizi iptal etmek veya değiştirmek için müşteri hizmetlerine başvurabilirsiniz."
+      ],
+       "function": "cancel_order"
+    },
+    {
+      "tag": "product_information",
+      "patterns": [
+        "Ürün hakkında bilgi almak istiyorum",
+        "Ürün özellikleri nedir?",
+        "Ürün açıklaması okumak istiyorum",
+        "Ürünleriniz hakkında bilgi almak istiyorum",
+        "Bir ürün hakkında bilgi almak istiyorum",
+        "Ürünleriniz nelerdir",
+        "Hangi ürünleri satıyorsunuz",
+        "Ürün hakkında detaylı bilgi verir misiniz",
+        "Ürünleriniz hakkında bilgi almak istiyorum",
+        "Bir ürün hakkında detaylı bilgi almak istiyorum"
+      ],
+      "responses": [
+        "Hangi ürün hakkında bilgi almak istediğinizi belirtir misiniz?"
+      ]
+    },
+    {
+      "tag": "order_help",
+      "patterns": [
+        "Sipariş verme hakkında yardıma ihtiyacım var",
+        "Sipariş nasıl verilir?",
+        "Sipariş verme sürecini anlamadım",
+        "Sipariş vermek istiyorum nasıl yapabilirim",
+        "Sipariş verme işlemini nasıl yapabilirim",
+        "Sipariş vermekte zorlanıyorum",
+        "Sipariş verme işlemiyle ilgili yardıma ihtiyacım var",
+        "Nasıl sipariş verebilirim",
+        "Sipariş verme işlemini anlamadım nasıl yapılır",
+        "Sipariş nasıl oluşturulur?"
+      ],
+      "responses": [
+        "Sipariş verme süreci hakkında size yardımcı olabilirim. Hangi adımlarda takıldığınızı söyleyebilir misiniz?"
+      ]
+    },
+    {
+      "tag": "complaint",
+      "patterns": [
+        "Şikayet etmek istiyorum",
+        "Memnuniyetsizlik bildirmek istiyorum",
+        "Memnun kalmadım",
+        "Memnuniyetsizlik durumu",
+        "Bir şikayetim var",
+        "Bir sorunum var çözüm bekliyorum",
+        "Şikayetim var çözüm istiyorum",
+        "Memnuniyetsizlik durumu bildirmek istiyorum",
+        "Memnuniyetsizlik durumu yaşadım",
+        "Bir problemim var yardıma ihtiyacım var"
+      ],
+      "responses": [
+        "Özür dileriz, memnuniyetsizlik durumunda size yardımcı olabilmemiz için lütfen detayları bize iletin."
+      ],
+      "function": "complaint"
+    },
+    {
+      "tag": "order_options",
+      "patterns": [
+        "Sipariş seçenekleri neler?",
+        "Menüyü görmek istiyorum",
+        "Hangi ürünleri satıyorsunuz?",
+        "Ne tür ürünleriniz var",
+        "Menünüzü görebilir miyim?",
+        "Ürün yelpazeniz nedir?",
+        "Menünüzü gösterir misiniz",
+        "Ne tür ürünler satıyorsunuz?",
+        "Ürün kataloğunuzu görmek istiyorum",
+        "Hangi ürünleri satıyorsunuz görmek istiyorum"
+      ],
+      "responses": [
+        "Şu anda mevcut olan sipariş seçeneklerini görmek için menümüzü ziyaret edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+        "Ödeme seçenekleri neler?",
+        "Hangi ödeme yöntemleri geçerlidir?",
+        "Ödeme seçenekleri hakkında bilgi almak istiyorum",
+        "Nasıl ödeme yapabilirim?",
+        "Ödeme yapma işlemi hakkında bilgi almak istiyorum",
+        "Hangi ödeme yöntemlerini kabul ediyorsunuz öğrenmek istiyorum",
+        "Hangi ödeme yöntemlerini kullanabilirim",
+        "Ödeme yapmak istiyorum hangi yöntemleri kullanabilirim",
+        "Nasıl ödeme yapabilirim öğrenmek istiyorum"
+      ],
+      "responses": [
+        "Kredi kartı, banka havalesi ve nakit ödeme seçeneklerimiz bulunmaktadır."
+      ]
+    },
+    {
+      "tag": "delivery_options",
+      "patterns": [
+        "Teslimat seçenekleri nelerdir?",
+        "Siparişin nasıl teslim edileceğini öğrenmek istiyorum",
+        "Kargo seçenekleriniz nedir?",
+        "Teslimat yöntemlerinizi öğrenmek istiyorum",
+        "Hangi teslimat seçeneklerini kullanabilirim?",
+        "Teslimat opsiyonları hakkında bilgi almak istiyorum",
+        "Nasıl teslimat yapılır öğrenmek istiyorum",
+        "Teslimat hizmetleriniz hakkında bilgi almak istiyorum",
+        "Hangi teslimat yöntemlerini kullanabilirim öğrenmek istiyorum",
+        "Teslimat seçeneklerinizi görmek istiyorum"
+      ],
+      "responses": [
+        "Kurye ile teslimat veya mağazadan teslim alma seçeneklerimiz bulunmaktadır."
+      ]
+    },
+    {
+      "tag": "promotion",
+      "patterns": [
+        "Mevcut promosyonlar nelerdir?",
+        "İndirimler hakkında bilgi almak istiyorum",
+        "Promosyonlarınız hakkında bilgi almak istiyorum",
+        "Kampanyalarınızı öğrenmek istiyorum",
+        "Promosyonlarınızı görmek istiyorum",
+        "Kampanyalarınızı görmek istiyorum",
+        "İndirimleriniz nelerdir?",
+        "Ne tür indirimleriniz var?",
+        "Mevcut kampanyaları gösterir misiniz?",
+        "İndirimlerinizi gösterir misiniz"
+      ],
+      "responses": [
+        "Şu anda geçerli olan promosyonları görmek için web sitemizi ziyaret edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "opening_hours",
+      "patterns": [
+        "Açılış saatleriniz nedir?",
+        "Kaçta açılıyorsunuz?",
+        "Çalışma saatleriniz nedir?",
+        "Mağaza saatleriniz hakkında bilgi almak istiyorum",
+        "Hangi saatler arasında açıksınız?",
+        "Ne zaman çalışıyorsunuz?",
+        "Açılış saatlerinizi öğrenmek istiyorum",
+        "Kaçta kapanıyorsunuz?",
+        "Ne zaman kapanıyorsunuz?",
+        "Mağaza çalışma saatleriniz nedir"
+      ],
+      "responses": [
+        "Mağazamız her gün 9:00 ile 21:00 saatleri arasında açıktır."
+      ]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Mağazanızın konumu nedir?",
+        "Nerede bulunuyorsunuz?",
+        "Adresiniz nedir?",
+        "Bulunduğunuz yeri öğrenmek istiyorum",
+        "Konumunuzu öğrenmek istiyorum",
+        "Neredesiniz?",
+        "Nerdesiniz?",
+        "Konum bilgisi almak istiyorum",
+        "Nerelerde hizmet veriyorsunuz?",
+        "Nerede bulunuyorsunuz adresinizi öğrenmek istiyorum"
+      ],
+      "responses": [
+        "Mağazamız şu adrestedir: 123 Sokak, Şehir, Ülke"
+      ]
+    },
+    {
+      "tag": "special_requests",
+      "patterns": [
+        "Özel isteklerde bulunabilir miyim?",
+        "Siparişimde özel bir talebim var",
+        "Siparişimle ilgili özel bir isteğim var",
+        "Özel bir isteğim var",
+        "Siparişimle ilgili bir talebim var",
+        "Özel bir isteğim var nasıl belirtebilirim",
+        "Siparişimle ilgili özel bir isteğim var nasıl belirtebilirim",
+        "Özel bir talepte bulunmak istiyorum",
+        "Siparişimle ilgili özel bir talebim var nasıl belirtebilirim",
+        "Siparişimle ilgili özel bir isteğim var nasıl iletebilirim"
+      ],
+      "responses": [
+        "Elbette! Siparişiniz sırasında özel bir talebiniz varsa lütfen belirtin, memnuniyetle yardımcı oluruz."
+      ]
+    },
+    {
+      "tag": "customer_feedback",
+      "patterns": [
+        "Müşteri geri bildirimi nasıl yapabilirim?",
+        "Nasıl geri bildirimde bulunabilirim?",
+        "Geri bildirim nasıl verilir?",
+        "Nasıl müşteri geri bildirimi yapabilirim?",
+        "Müşteri memnuniyeti nasıl sağlanır?",
+        "Müşteri geri bildirimi ile nasıl katkıda bulunabilirim?",
+        "Müşteri memnuniyeti için geri bildirim vermek istiyorum",
+        "Nasıl müşteri geri bildirimi sağlayabilirim?",
+        "Nasıl memnuniyetimi bildirebilirim?",
+        "Nasıl geri bildirimde bulunabilirim öğrenmek istiyorum"
+      ],
+      "responses": [
+        "Müşteri memnuniyeti bizim için önemlidir. Geri bildiriminizi web sitemizdeki iletişim formu aracılığıyla veya sosyal medya hesaplarımız üzerinden iletebilirsiniz."
+      ],
+      "function": "customer_feedback"
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "Sadakat programınız var mı?",
+        "Müşterilere özel fırsatlarınız var mı?",
+        "Sadakat programı hakkında bilgi almak istiyorum",
+        "Müşterilere özel indirimleriniz var mı?",
+        "Sadakat programınızı öğrenmek istiyorum",
+        "Müşterilere özel avantajlarınız var mı?",
+        "Sadakat programınız nedir?",
+        "Sadakat programı nasıl çalışır?",
+        "Sadakat programı hakkında detaylı bilgi almak istiyorum",
+        "Sadakat programınızı anlatabilir misiniz?"
+      ],
+      "responses": [
+        "Evet, sadakat programımız bulunmaktadır. Daha fazla bilgi için web sitemizi ziyaret edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "website_help",
+      "patterns": [
+        "Web sitesinde gezinirken yardıma ihtiyacım var",
+        "Web sitesi hakkında bilgi almak istiyorum",
+        "Web sitesi nasıl kullanılır?",
+        "Web sitesi hakkında yardıma ihtiyacım var",
+        "Web sitesi kullanımıyla ilgili yardıma ihtiyacım var",
+        "Web sitesinde gezinirken zorlanıyorum yardımcı olur musunuz?",
+        "Web sitesi kullanımı hakkında bilgi almak istiyorum",
+        "Web sitesinde nasıl dolaşabilirim?",
+        "Web sitesi hakkında detaylı bilgi almak istiyorum",
+        "Web sitesinde nasıl hareket edebilirim?"
+      ],
+      "responses": [
+        "Web sitemizi kullanırken herhangi bir sorunuz veya yardıma ihtiyacınız olduğunda bize ulaşmaktan çekinmeyin."
+      ]
+    },
+    {
+      "tag": "stock_availability",
+      "patterns": [
+        "Ürün stokta var mı?",
+        "Stok durumunu öğrenmek istiyorum",
+        "Ürün stok durumunu sorgulamak istiyorum",
+        "Stok durumunu kontrol etmek istiyorum",
+        "Ürün stokta mı yoksa tükenmiş mi?",
+        "Ürün stok durumunu öğrenmek istiyorum",
+        "Bir ürün stokta mı?",
+        "Ürün stokta mı?",
+        "Ürün stokta mı yoksa tükenmiş mi kontrol etmek istiyorum",
+        "Ürün stok durumunu sorgulamak istiyorum"
+      ],
+      "responses": [
+        "Şu anda stoklarımızda bulunan ürünler hakkında bilgi almak için web sitemizi ziyaret edebilirsiniz."
+      ]
+    },
+    {
+      "tag": "delivery_time",
+      "patterns": [
+        "Siparişimin teslim süresi nedir?",
+        "Ne zaman teslim edilir?",
+        "Siparişim kaç günde gelir?",
+        "Siparişimin ne zaman teslim edileceğini öğrenmek istiyorum",
+        "Siparişimin ne kadar sürede teslim edileceğini öğrenmek istiyorum",
+        "Siparişim ne zaman elime ulaşır?",
+        "Siparişimin ne zaman teslim edileceğini bilmek istiyorum",
+        "Siparişimin ne kadar sürede geleceğini öğrenmek istiyorum",
+        "Siparişimin ne zaman geleceğini öğrenmek istiyorum",
+        "Siparişimin ne kadar sürede teslim edileceğini bilmek istiyorum"
+      ],
+      "responses": [
+        "Siparişinizin teslim süresi, teslimat yöntemine ve bölgenize bağlı olarak değişiklik gösterebilir. Daha fazla bilgi için lütfen müşteri hizmetlerimizle iletişime geçin."
+      ],
+      "function": "get_delivery_time"
+    },
+    {
+      "tag": "order_confirmation",
+      "patterns": [
+        "Siparişimi nasıl onaylayabilirim?",
+        "Sipariş onayı nasıl yapılır?",
+        "Siparişimin onaylandığını nasıl bilebilirim?",
+        "Siparişimin onaylandığını nasıl kontrol edebilirim?",
+        "Siparişimin onaylandığını nasıl öğrenebilirim?",
+        "Siparişimin onaylandığını nasıl anlarım?",
+        "Siparişimin onaylandığını nasıl bileceğim?",
+        "Siparişimin onaylandığını nasıl görebilirim?",
+        "Siparişimin onaylandığını nasıl kontrol edebilirim",
+        "Siparişimin onaylandığını nasıl anlarım"
+      ],
+      "responses": [
+        "Siparişiniz onaylandığında size bir onay e-postası gönderilecektir."
+      ]
+    },
+    {
+      "tag": "order_confirmation_help",
+      "patterns": [
+        "Sipariş onayı alamadım ne yapmalıyım?",
+        "Siparişimin onaylandığını nasıl öğrenebilirim?",
+        "Sipariş onayı alamıyorum",
+        "Siparişimin onaylandığını nasıl kontrol edebilirim",
+        "Sipariş onayımı nasıl alabilirim?",
+        "Siparişimin onaylandığını nasıl öğrenirim?",
+        "Siparişimin onaylandığını nasıl kontrol edebilirim",
+        "Sipariş onayımı alamıyorum ne yapmalıyım?",
+        "Siparişimin onaylandığını nasıl öğrenebilirim?",
+        "Siparişimin onaylandığını nasıl kontrol edebilirim"
+      ],
+      "responses": [
+        "Sipariş onayını almakta sorun yaşıyorsanız, lütfen müşteri hizmetlerimizle iletişime geçin."
+      ]
+    },
+    {
+      "tag": "order_cancel_confirmation",
+      "patterns": [
+        "Siparişimi iptal etmek istediğimi onaylamak istiyorum",
+        "Siparişimi iptal etmek istediğimi doğrulamak istiyorum",
+        "Siparişimi iptal etmek istediğimi onaylamak istiyorum",
+        "Siparişimi iptal etmek için onay istiyorum",
+        "Siparişimi iptal etmek istediğimi doğrulamak istiyorum",
+        "Siparişimi iptal etmek istediğimi onaylamak istiyorum",
+        "Siparişimi iptal etmek için onay almak istiyorum",
+        "Siparişimi iptal etmek istediğimi onaylamak istiyorum",
+        "Siparişimi iptal etmek için onay almak istiyorum",
+        "Siparişimi iptal etmek istiyorum onayınızı istiyorum"
+      ],
+      "responses": [
+        "Siparişinizi iptal etmek istediğinizi onaylamak için lütfen 'Evet' yanıtını verin."
+      ]
+    },
+    {
+      "tag": "order_cancel_confirmation_help",
+      "patterns": [
+        "Siparişimi iptal edemedim ne yapmalıyım?",
+        "Siparişimi iptal edemedim ne yapmalıyım?",
+        "Siparişimi iptal edemedim ne yapmalıyım?",
+        "Siparişimi iptal etme işlemi yapılamadı ne yapmalıyım?",
+        "Siparişimi iptal etme işlemi başarısız oldu ne yapmalıyım?",
+        "Siparişimi iptal edemedim ne yapmalıyım?",
+        "Siparişimi iptal etme işlemi başarısız oldu ne yapmalıyım?",
+        "Siparişimi iptal etme işlemi başarısız oldu ne yapmalıyım?",
+        "Siparişimi iptal edemedim ne yapmalıyım?",
+        "Siparişimi iptal edemedim ne yapmalıyım?"
+      ],
+      "responses": [
+        "Siparişinizi iptal etme konusunda yardımcı olmak için lütfen müşteri hizmetlerimizle iletişime geçin."
+      ]
+    },
+    {
+      "tag": "order_change_confirmation",
+      "patterns": [
+        "Siparişimde değişiklik yapmak istediğimi onaylamak istiyorum",
+        "Siparişimde değişiklik yapmak istediğimi doğrulamak istiyorum",
+        "Siparişimde değişiklik yapmak istediğimi onaylamak istiyorum",
+        "Siparişimde değişiklik yapmak için onay istiyorum",
+        "Siparişimde değişiklik yapmak istediğimi doğrulamak istiyorum",
+        "Siparişimde değişiklik yapmak istediğimi onaylamak istiyorum",
+        "Siparişimde değişiklik yapmak için onay almak istiyorum",
+        "Siparişimde değişiklik yapmak istediğimi onaylamak istiyorum",
+        "Siparişimde değişiklik yapmak için onay almak istiyorum",
+        "Siparişimde değişiklik yapmak istiyorum onayınızı istiyorum"
+      ],
+      "responses": [
+        "Siparişinizdeki değişikliği onaylamak için lütfen 'Evet' yanıtını verin."
+      ]
+    },
+    {
+      "tag": "return_confirmation",
+      "patterns": [
+        "Ürünü iade etmek istiyorum",
+        "Ürünü geri göndermek istiyorum",
+        "İade etmek istediğim ürün",
+        "Ürünü iade etmek istiyorum nasıl yapabilirim?",
+        "İade süreci hakkında bilgi almak istiyorum",
+        "Ürünü geri göndermek istiyorum nasıl yapabilirim?",
+        "Ürünü iade etmek istiyorum ne yapmalıyım?",
+        "Ürünü nasıl iade edebilirim?",
+        "Ürünü geri göndermek istiyorum ne yapmalıyım?",
+        "Ürünü iade etmek istiyorum nasıl bir yol izlemeliyim?"
+      ],
+      "responses": [
+        "İade işlemi için lütfen müşteri hizmetlerimizle iletişime geçin."
+      ]
+    },
+    {
+      "tag": "order_cancel_confirmation",
+      "patterns": [
+        "Siparişi iptal etmek istiyorum",
+        "Siparişi iptal etmek istiyorum nasıl yapabilirim?",
+        "Siparişimi iptal etmek istiyorum",
+        "Siparişimi iptal etmek için yardıma ihtiyacım var",
+        "Siparişi iptal etmek istiyorum nasıl bir yol izlemeliyim?",
+        "Siparişimi iptal etmek istiyorum ne yapmalıyım?",
+        "Siparişi iptal etmek istiyorum ne yapmalıyım?",
+        "Siparişi iptal etmek istiyorum onayınızı istiyorum",
+        "Siparişimi iptal etmek istiyorum onayınızı bekliyorum",
+        "Siparişimi iptal etmek istiyorum onay almak istiyorum"
+      ],
+      "responses": [
+        "Sipariş iptali için lütfen müşteri hizmetlerimizle iletişime geçin."
+      ]
+    },
+    {
+      "tag": "payment_confirmation",
+      "patterns": [
+        "Ödeme yaptım",
+        "Ödeme işlemi tamamlandı",
+        "Ödeme gerçekleştirdim",
+        "Ödeme onayı",
+        "Ödeme işlemi hakkında bilgi almak istiyorum",
+        "Ödeme onaylandı",
+        "Ödeme işlemi tamamlandı mı?",
+        "Ödeme onayı aldım",
+        "Ödeme hakkında doğrulama istiyorum",
+        "Ödeme işlemi başarılı"
+      ],
+      "responses": [
+        "Ödeme işlemi başarıyla tamamlandı."
+      ]
+    },
+    {
+      "tag": "product_recommendation",
+      "patterns": [
+        "Bana bir ürün tavsiye eder misiniz?",
+        "En popüler ürünler hangileri?",
+        "Bir ürün önerisi alabilir miyim?",
+        "Bir ürün tavsiyesi istiyorum",
+        "Benim için bir ürün seçer misiniz?",
+        "Hangi ürünü önerirsiniz?",
+        "Bana uygun bir ürün bulabilir misiniz?",
+        "En iyi ürünler nelerdir?",
+        "Ürün tavsiyesi istiyorum",
+        "Biraz ürün önerisi alabilir miyim?"
+      ],
+      "responses": [
+        "Tabii, size şu ürünü tavsiye edebilirim: [ürün adı]"
+      ]
+    },
+    {
+      "tag": "website_navigation_help",
+      "patterns": [
+        "Web sitesinde nasıl gezinebilirim?",
+        "Web sitesinde nasıl arama yapabilirim?",
+        "Web sitesinde nasıl bir ürün bulabilirim?",
+        "Web sitesinde nasıl bir kategoriye ulaşabilirim?",
+        "Web sitesinde gezinme hakkında yardıma ihtiyacım var",
+        "Web sitesinde nasıl hesap oluşturabilirim?",
+        "Web sitesinde ürün arama nasıl yapılır?",
+        "Web sitesinde nasıl filtreleme yapabilirim?",
+        "Web sitesinde nasıl bir ürün sipariş edebilirim?",
+        "Web sitesinde nasıl bir ürün karşılaştırabilirim?"
+      ],
+      "responses": [
+        "Web sitemizde gezinmeyle ilgili size yardımcı olmak için buradayım. Hangi konuda yardıma ihtiyacınız var?"
+      ]
+    },
+    {
+      "tag": "sales_trends",
+      "patterns": [
+        "Satış trendleri",
+        "Hangi ürünler daha fazla satılıyor?",
+        "Satışlar ne yönde?",
+        "Satış raporu istiyorum",
+        "Satış istatistikleri",
+        "Son satış trendleri",
+        "Hangi ürünler daha popüler?",
+        "En çok satılan ürünler",
+        "Geçmiş satış verileri",
+        "Satışlarda artış yaşanıyor mu?"
+      ],
+      "responses": [
+        "Satış trendlerini incelemek için satış raporunuza göz atabilirsiniz."
+      ],
+      "function": "get_sales_trends"
+    },
+    {
+      "tag": "best_selling_products",
+      "patterns": [
+        "En çok satan ürünler",
+        "Popüler ürünler",
+        "Hangi ürünler daha çok satılıyor?",
+        "Bestseller ürünler",
+        "En fazla satılan ürünler",
+        "En çok tercih edilen ürünler",
+        "En çok talep gören ürünler",
+        "Popüler ürünler hangileri?",
+        "En çok satan ürünler listesi",
+        "Popüler ürünler listesi"
+      ],
+      "responses": [
+        "En çok satan ürünler listesine göz atabilirsiniz."
+      ],
+      "function": "best_selling_products"
+    }
+  ]
+}

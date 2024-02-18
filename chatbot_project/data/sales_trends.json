@@ -1,0 +1,29 @@
+{
+  "sales_trends": [
+    {
+      "tarih": "10 Şubat 2024",
+      "satış_miktarı": 150,
+      "gelir": 7500
+    },
+    {
+      "tarih": "11 Şubat 2024",
+      "satış_miktarı": 180,
+      "gelir": 9000
+    },
+    {
+      "tarih": "12 Şubat 2024",
+      "satış_miktarı": 200,
+      "gelir": 10000
+    },
+    {
+      "tarih": "13 Şubat 2024",
+      "satış_miktarı": 170,
+      "gelir": 8500
+    },
+    {
+      "tarih": "14 Şubat 2024",
+      "satış_miktarı": 190,
+      "gelir": 9500
+    }
+  ]
+}
