@@ -29,11 +29,6 @@ Baðýmlýlýklar:
     transformers
 
 Kurulum:
-
-    Gerekli baðýmlýlýklarý pip kullanarak kurun:
-
-Bash
-
     pip install tensorflow keras nltk transformers
 
 
