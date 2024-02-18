@@ -86,7 +86,8 @@ early_stopping = EarlyStopping(monitor='loss', patience=10)
 
 hist = model.fit(train_x, train_y, epochs=200, batch_size=20, callbacks=[early_stopping], validation_split=0.2)
 
-
+if not os.path.exists('models'):
+    os.makedirs('models')
 model.save('models/chatbot_model.keras', hist)
 
 
