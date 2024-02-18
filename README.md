@@ -1,27 +1,27 @@
 # **Chatbot Project**
 
-## Açıklama: 
+## AÃ§Ä±klama: 
 
-Bu proje, kullanıcı sorgularına yanıt verebilen ve sipariş durumu sorguları, sipariş iptalleri, şikayetler, müşteri geri bildirimleri, teslimat süresi tahminleri ve satış trendleri raporları gibi çeşitli görevleri yerine getirebilen bir sohbet botudur.
+Bu proje, kullanÄ±cÄ± sorgularÄ±na yanÄ±t verebilen ve sipariÅŸ durumu sorgularÄ±, sipariÅŸ iptalleri, ÅŸikayetler, mÃ¼ÅŸteri geri bildirimleri, teslimat sÃ¼resi tahminleri ve satÄ±ÅŸ trendleri raporlarÄ± gibi Ã§eÅŸitli gÃ¶revleri yerine getirebilen bir sohbet botudur.
 
-### Özellikler:
+### Ã–zellikler:
 
-    Kullanıcı sorgularına yanıt verme
-    Sipariş durumu takip 
-    Sipariş iptali
-    Şikayet kaydı
-    Müşteri geri bildirimi
-    Teslimat süresi
-    Satış trendlerini ve en çok satan ürünler
+    KullanÄ±cÄ± sorgularÄ±na yanÄ±t verme
+    SipariÅŸ durumu takip 
+    SipariÅŸ iptali
+    Åikayet kaydÄ±
+    MÃ¼ÅŸteri geri bildirimi
+    Teslimat sÃ¼resi
+    SatÄ±ÅŸ trendlerini ve en Ã§ok satan Ã¼rÃ¼nler
 
-### Kullanım:
+### KullanÄ±m:
+    trainModel.py dosyasÄ±nÄ± Ã§alÄ±ÅŸtÄ±rÄ±n ve modelin eÄŸitilmesini bekleyin.
+    chatbot.py betiÄŸini Ã§alÄ±ÅŸtÄ±rÄ±n.
+    Sohbet botu sizi selamlayacak ve sorgunuzu veya isteÄŸinizi girmenizi isteyecektir.
+    Sorgunuzu veya isteÄŸinizi yazÄ±n ve Enter tuÅŸuna basÄ±n.
+    Sohbet botu girdinizi iÅŸleyecek ve buna gÃ¶re yanÄ±t verecektir.
 
-    chatbot.py betiğini çalıştırın.
-    Sohbet botu sizi selamlayacak ve sorgunuzu veya isteğinizi girmenizi isteyecektir.
-    Sorgunuzu veya isteğinizi yazın ve Enter tuşuna basın.
-    Sohbet botu girdinizi işleyecek ve buna göre yanıt verecektir.
-
-Bağımlılıklar:
+BaÄŸÄ±mlÄ±lÄ±klar:
 
     TensorFlow
     Keras
@@ -34,18 +34,18 @@ Kurulum:
 
 
 
-Gerekli NLTK kaynaklarını indirin:
+Gerekli NLTK kaynaklarÄ±nÄ± indirin:
 
     python -m nltk.downloader punkt wordnet
 
 
 Veri:
 
-    Sohbet botu, sınırlı bir veri kümesi üzerinde eğitilmiştir.
-    Veri kümesi data dizininde bulunmaktadır.
+    Sohbet botu, sÄ±nÄ±rlÄ± bir veri kÃ¼mesi Ã¼zerinde eÄŸitilmiÅŸtir.
+    Veri kÃ¼mesi data dizininde bulunmaktadÄ±r.
 
 Model:
 
-    Sohbet botu, Hugging Face Transformers'dan önceden eğitilmiş bir dil modeli kullanır.
-    Model, sohbet botu veri kümesi üzerinde ince ayar yapılır.
-    Eğitilmiş model models dizininde saklanır.
+    Sohbet botu, Hugging Face Transformers'dan Ã¶nceden eÄŸitilmiÅŸ bir dil modeli kullanÄ±r.
+    Model, sohbet botu veri kÃ¼mesi Ã¼zerinde ince ayar yapÄ±lÄ±r.
+    EÄŸitilmiÅŸ model models dizininde saklanÄ±r.
