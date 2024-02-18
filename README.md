@@ -37,15 +37,3 @@ Kurulum:
 Gerekli NLTK kaynaklarını indirin:
 
     python -m nltk.downloader punkt wordnet
-
-
-Veri:
-
-    Sohbet botu, sınırlı bir veri kümesi üzerinde eğitilmiştir.
-    Veri kümesi data dizininde bulunmaktadır.
-
-Model:
-
-    Sohbet botu, Hugging Face Transformers'dan önceden eğitilmiş bir dil modeli kullanır.
-    Model, sohbet botu veri kümesi üzerinde ince ayar yapılır.
-    Eğitilmiş model models dizininde saklanır.
