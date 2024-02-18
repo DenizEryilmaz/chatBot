@@ -1,5 +1,5 @@
 # **Chatbot Project**
-
+![](Chatbot.png)
 ## Açıklama: 
 
 Bu proje, kullanıcı sorgularına yanıt verebilen ve sipariş durumu sorguları, sipariş iptalleri, şikayetler, müşteri geri bildirimleri, teslimat süresi tahminleri ve satış trendleri raporları gibi çeşitli görevleri yerine getirebilen bir sohbet botudur.
