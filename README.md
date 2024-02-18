@@ -29,11 +29,13 @@ Baðýmlýlýklar:
     transformers
 
 Kurulum:
+
     pip install tensorflow keras nltk transformers
 
 
 
 Gerekli NLTK kaynaklarýný indirin:
+
     python -m nltk.downloader punkt wordnet
 
 
