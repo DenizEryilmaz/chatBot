@@ -1,8 +1,14 @@
 # **Chatbot Project**
-![](Chatbot.png)
-## Açıklama: 
 
+## Açıklama: 
 Bu proje, kullanıcı sorgularına yanıt verebilen ve sipariş durumu sorguları, sipariş iptalleri, şikayetler, müşteri geri bildirimleri, teslimat süresi tahminleri ve satış trendleri raporları gibi çeşitli görevleri yerine getirebilen bir sohbet botudur.
+
+### Bu bot sadece deneme amaçlıdır. Customer Service Chat Data 30K veriseti kullanılarak daha gelişmiş bir bot geliştirme çalışmalarım devam etmektedir.
+
+![](Chatbot.png)
+
+
+
 
 ### Özellikler:
 
