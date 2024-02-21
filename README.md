@@ -3,7 +3,7 @@
 ## Açıklama: 
 Bu proje, kullanıcı sorgularına yanıt verebilen ve sipariş durumu sorguları, sipariş iptalleri, şikayetler, müşteri geri bildirimleri, teslimat süresi tahminleri ve satış trendleri raporları gibi çeşitli görevleri yerine getirebilen bir sohbet botudur.
 
-### Bu bot sadece deneme amaçlıdır.Gelişmiş bir bot eğitmek için uygun türkçe veri seti bulunamamıştır.
+### Bu bot doğal dil işleme ve sohbet botlarının çalışma mantığını anlamak için geliştirilmiştir.Gelişmiş bir bot eğitmek için uygun türkçe veri seti bulunamamıştır.
 
 ![](Chatbot.png)
 
